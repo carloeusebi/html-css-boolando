@@ -18,7 +18,21 @@ body{
 
 a{
     text-decoration: none;
-    color: black
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;    
+}
+
+li{
+    display: inline;
+    padding-right: 10px;
 }
 
 /* debug */
@@ -26,9 +40,9 @@ a{
     border: 2px dashed black;
 }
 
-header .container, footer .container{
+/* header .container, footer .container{
     height: 100px;
-}
+} */
 
 header .container > *{
     width: 20px;
@@ -57,13 +71,40 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
+    font-weight: bold;
+}
+
+.logo{
+    height: 25px;
+    margin: 15px 0;
 }
 
 header .container{
     justify-content: space-between;
 }
 
+header .container > *{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.hder-left{
+    justify-content: flex-start;
+}
+
+.hder-center{
+    justify-content: center;;
+}
+
+.hder-right{
+    justify-content: flex-end;
+}
+
 /* main */
+main a{
+    color: black;
+}
 
 /* layout */
 .row{
@@ -161,7 +202,7 @@ header .container{
 /* footer */
 footer{
     margin-top: 50px;
-    background-color: lightslategray;
+    background-color: var(--color-footer);
 }
 
 footer .container{
