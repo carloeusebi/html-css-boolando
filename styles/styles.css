@@ -75,7 +75,8 @@ header{
 }
 
 .logo{
-    height: 25px;   
+    height: 25px;
+    display: block;
 }
 
 header .container{
