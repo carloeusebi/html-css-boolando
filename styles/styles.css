@@ -44,6 +44,11 @@ header .container > *{
     display: flex;
 }
 
+main .column .hidden{
+    padding: 0;
+    font-size: 0;
+}
+
 /* header */
 header{
     background-color: var(--color-header);
@@ -92,6 +97,7 @@ header .container{
 .card-picture:hover .card-default-pic{
     z-index: -1;
 }
+
 
 /* card tags */
 

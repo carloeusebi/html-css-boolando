@@ -12,7 +12,7 @@
     <!-- font awesome link -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
 </head>
-<body class="debug">
+<body class="ndebug">
     
     <!-- Boolean exersice
     by CARLO EUSEBI -->
@@ -32,7 +32,35 @@
         <!-- main's flex container -->
         <div class="row container flex db-border">
 
+            <!-- FIRST ITEM -->
+            <!-- column is the flex item -->
+            <div class="column db-border">
+                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
+                <a href="#">
+                    <!-- everything inside the card is a link towards the product page -->
+                    <div class="card-picture">
+                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
+                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
+                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
+                        <!-- the favourite's heart -->
+                        <div class="card-favourite">&hearts;</div>
+                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
+                        <div class="card-tag discount">-50%
+                            <div class="card-tag sustainable">Sostenibilità
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <!-- bottom side of card contains info about the items brand, name and pricing -->
+                        <div class="clothing-brand">Levi's</div>
+                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
+                        <span class="clothing-price-actual">14,99 €</span>
+                        <span class="clothing-price-original">29,99 €</span>
+                    </div>                 
+                </a>                
+            </div>
 
+            <!-- SECOND ITEM -->
             <!-- column is the flex item -->
             <div class="column db-border">
                 <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
@@ -40,8 +68,64 @@
                     <!-- everything inside the card is a link towards the product page -->
                     <div class="card-picture">
                         <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
+                        <img class="card-hover-pic" src="img/2b.webp" alt="Roses Tee">                        
+                        <img class="card-default-pic" src="img/2.webp" alt="Roses Tee">
+                        <!-- the favourite's heart -->
+                        <div class="card-favourite">&hearts;</div>
+                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
+                        <div class="card-tag discount">-30%
+                            <div class="card-tag sustainable hidden">Sostenibilità
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <!-- bottom side of card contains info about the items brand, name and pricing -->
+                        <div class="clothing-brand">Guess</div>
+                        <div class="clothing-name">Roses Tee</div>                        
+                        <span class="clothing-price-actual">20,99 €</span>
+                        <span class="clothing-price-original">29,99 €</span>
+                    </div>                 
+                </a>                
+            </div>
+
+            <!-- THIRD ITEM -->
+            <!-- column is the flex item -->
+            <div class="column db-border">
+                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
+                <a href="#">
+                    <!-- everything inside the card is a link towards the product page -->
+                    <div class="card-picture">
+                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
+                        <img class="card-hover-pic" src="img/3b.webp" alt="Voglia di colori pastello">                        
+                        <img class="card-default-pic" src="img/3.webp" alt="Voglia di colori pastello">
+                        <!-- the favourite's heart -->
+                        <div class="card-favourite">&hearts;</div>
+                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
+                        <div class="card-tag discount">-30%
+                            <div class="card-tag sustainable hidden">Sostenibilità
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <!-- bottom side of card contains info about the items brand, name and pricing -->
+                        <div class="clothing-brand">Come Zucchero Filato</div>
+                        <div class="clothing-name">Voglia di colori pastello</div>                        
+                        <span class="clothing-price-actual">129,99 €</span>
+                        <span class="clothing-price-original">184,99 €</span>
+                    </div>                 
+                </a>                
+            </div>
+
+            <!-- FOURTH ITEM -->
+            <!-- column is the flex item -->
+            <div class="column db-border">
+                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
+                <a href="#">
+                    <!-- everything inside the card is a link towards the product page -->
+                    <div class="card-picture">
+                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
+                        <img class="card-hover-pic" src="img/4b.webp" alt="Tee unisex">                        
+                        <img class="card-default-pic" src="img/4.webp" alt="Tee unisex">
                         <!-- the favourite's heart -->
                         <div class="card-favourite">&hearts;</div>
                         <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
@@ -53,12 +137,14 @@
                     <div class="card-bottom">
                         <!-- bottom side of card contains info about the items brand, name and pricing -->
                         <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
+                        <div class="clothing-name">Tee unisex</div>                        
                         <span class="clothing-price-actual">14,99 €</span>
                         <span class="clothing-price-original">29,99 €</span>
                     </div>                 
                 </a>                
             </div>
+
+            <!-- FIFTH ITEM -->
             <!-- column is the flex item -->
             <div class="column db-border">
                 <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
@@ -66,25 +152,27 @@
                     <!-- everything inside the card is a link towards the product page -->
                     <div class="card-picture">
                         <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
+                        <img class="card-hover-pic" src="img/5b.webp" alt="Strip bodice">                        
+                        <img class="card-default-pic" src="img/5.webp" alt="Strip bodice">
                         <!-- the favourite's heart -->
                         <div class="card-favourite">&hearts;</div>
                         <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
-                        <div class="card-tag discount">-50%
-                            <div class="card-tag sustainable">Sostenibilità
+                        <div class="card-tag discount hidden">-50%
+                            <div class="card-tag sustainable hidden">Sostenibilità
                             </div>                        
                         </div>
                     </div>
                     <div class="card-bottom">
                         <!-- bottom side of card contains info about the items brand, name and pricing -->
-                        <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
-                        <span class="clothing-price-actual">14,99 €</span>
-                        <span class="clothing-price-original">29,99 €</span>
+                        <div class="clothing-brand">Maya Deluxe</div>
+                        <div class="clothing-name">Strip bodice</div>                        
+                        <span class="clothing-price-actual">99,99 €</span>
+                        <span class="clothing-price-original hidden">99,99 €</span>
                     </div>                 
                 </a>                
             </div>
+
+            <!-- SIXTH ELEMENT -->
             <!-- column is the flex item -->
             <div class="column db-border">
                 <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
@@ -92,100 +180,22 @@
                     <!-- everything inside the card is a link towards the product page -->
                     <div class="card-picture">
                         <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
+                        <img class="card-hover-pic" src="img/6b.webp" alt="Maglione - black">                        
+                        <img class="card-default-pic" src="img/6.webp" alt="Maglione - black">
                         <!-- the favourite's heart -->
                         <div class="card-favourite">&hearts;</div>
                         <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
-                        <div class="card-tag discount">-50%
+                        <div class="card-tag discount hidden">- 50%
                             <div class="card-tag sustainable">Sostenibilità
                             </div>                        
                         </div>
                     </div>
                     <div class="card-bottom">
                         <!-- bottom side of card contains info about the items brand, name and pricing -->
-                        <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
-                        <span class="clothing-price-actual">14,99 €</span>
-                        <span class="clothing-price-original">29,99 €</span>
-                    </div>                 
-                </a>                
-            </div>
-            <!-- column is the flex item -->
-            <div class="column db-border">
-                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
-                <a href="#">
-                    <!-- everything inside the card is a link towards the product page -->
-                    <div class="card-picture">
-                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
-                        <!-- the favourite's heart -->
-                        <div class="card-favourite">&hearts;</div>
-                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
-                        <div class="card-tag discount">-50%
-                            <div class="card-tag sustainable">Sostenibilità
-                            </div>                        
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <!-- bottom side of card contains info about the items brand, name and pricing -->
-                        <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
-                        <span class="clothing-price-actual">14,99 €</span>
-                        <span class="clothing-price-original">29,99 €</span>
-                    </div>                 
-                </a>                
-            </div>
-            <!-- column is the flex item -->
-            <div class="column db-border">
-                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
-                <a href="#">
-                    <!-- everything inside the card is a link towards the product page -->
-                    <div class="card-picture">
-                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
-                        <!-- the favourite's heart -->
-                        <div class="card-favourite">&hearts;</div>
-                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
-                        <div class="card-tag discount">-50%
-                            <div class="card-tag sustainable">Sostenibilità
-                            </div>                        
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <!-- bottom side of card contains info about the items brand, name and pricing -->
-                        <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
-                        <span class="clothing-price-actual">14,99 €</span>
-                        <span class="clothing-price-original">29,99 €</span>
-                    </div>                 
-                </a>                
-            </div>
-            <!-- column is the flex item -->
-            <div class="column db-border">
-                <!-- flex item is divided in a top section (card-picture) and a bottom one (card-bottom) -->
-                <a href="#">
-                    <!-- everything inside the card is a link towards the product page -->
-                    <div class="card-picture">
-                        <!-- inside the card picture there are two images, placed one on top of another through "position trickery" -->
-                        <img class="card-hover-pic" src="img/1b.webp" alt="Relaxed fit tee unisex">                        
-                        <img class="card-default-pic" src="img/1.webp" alt="Relaxed fit tee unisex">
-                        <!-- the favourite's heart -->
-                        <div class="card-favourite">&hearts;</div>
-                        <!-- the discount% tag, nesting the sustainable tag inside the discount tag allows to easily place them side by side through positioning-->
-                        <div class="card-tag discount">-50%
-                            <div class="card-tag sustainable">Sostenibilità
-                            </div>                        
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <!-- bottom side of card contains info about the items brand, name and pricing -->
-                        <div class="clothing-brand">Levi's</div>
-                        <div class="clothing-name">Relaxed fit tee unisex</div>                        
-                        <span class="clothing-price-actual">14,99 €</span>
-                        <span class="clothing-price-original">29,99 €</span>
+                        <div class="clothing-brand">Espirit</div>
+                        <div class="clothing-name">Maglione - black</div>                        
+                        <span class="clothing-price-actual">29,99 €</span>
+                        <span class="clothing-price-original hidden">29,99 €</span>
                     </div>                 
                 </a>                
             </div>
