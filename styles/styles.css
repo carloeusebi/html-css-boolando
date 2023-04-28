@@ -40,10 +40,6 @@ li{
     border: 2px dashed black;
 }
 
-/* header .container, footer .container{
-    height: 100px;
-} */
-
 header .container > *{
     width: 20px;
 }
@@ -58,7 +54,10 @@ header .container > *{
     display: flex;
 }
 
-main .column .hidden{
+.card-tag.hidden{
+    /* this selector is used to hide discount and sust tags while they are still present in html;
+    they need to be phisically present because sustainable tag's position depends on discount's */
+    /* it needs a more advanced selector to win specificity */
     padding: 0;
     font-size: 0;
 }
@@ -71,7 +70,6 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
-    font-weight: bold;
     padding: 15px 0;
     box-shadow: 0 2px 2px gray;
 }
@@ -92,6 +90,7 @@ header .container > *{
 
 .hder-left{
     justify-content: flex-start;
+    font-weight: bold;
 }
 
 .hder-center{
@@ -107,7 +106,7 @@ main a{
     color: black;
 }
 
-/* layout */
+/* main's layout */
 .row{
     flex-wrap: wrap;
     column-gap: 10px;
@@ -140,7 +139,6 @@ main a{
     z-index: -1;
 }
 
-
 /* card tags */
 
 .card-favourite{
@@ -150,7 +148,6 @@ main a{
     position: absolute;
     top: 10px;
     right:0;
-    cursor: pointer;
 }
 
 .card-favourite:hover{
@@ -174,12 +171,13 @@ main a{
 .card-tag.sustainable{
     background-color: #008000;
     color: white;
+    /* since sustainable's parent is discount, left 100% positions it on discount's right, 110% gives it a little bit of space  */
     left: 110%;
     bottom: 0;    
 }
 
 /* card bottom text styling */
-.card-bottom .clothing-brand{
+.card-bottom{
     font-size: 14px;
 }
 
@@ -190,13 +188,11 @@ main a{
 }
 
 .card-bottom .clothing-price-actual{
-    font-size: 14px;
     color: red;
     font-weight: bolder;
 }
 
 .card-bottom .clothing-price-original{
-    font-size: 14px;
     text-decoration: line-through;
 }
 
@@ -209,7 +205,7 @@ footer{
     font-size: 12px;
 }
 
-footer .container{
+footer .container.flex{
     justify-content: space-between;
 }
 
