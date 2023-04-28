@@ -4,3 +4,72 @@
     margin: 0;
     padding: 0;
 }
+
+/* generics  */
+:root{
+    --color-header: #ff6900;
+    --color-footer: #1a1a1a;
+}
+
+body{
+    padding-top: 120px;
+}
+
+/* debug */
+.debug .db-border{
+    border: 2px dashed black;
+}
+
+header .container, footer .container{
+    height: 100px;
+}
+
+header .container > *{
+    width: 20px;
+}
+
+/* utilities */
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* header */
+header{
+    background-color: var(--color-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .container{
+    justify-content: space-between;
+}
+
+/* main */
+.row{
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+.column{
+    flex: 0 0 calc((100% - 20px) / 3);
+    height: 800px;
+}
+
+/* footer */
+footer{
+    margin-top: 50px;
+    background-color: lightslategray;
+}
+
+footer .container{
+    justify-content: space-between;
+}
+
