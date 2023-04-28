@@ -72,11 +72,11 @@ header{
     right: 0;
     z-index: 1;
     font-weight: bold;
+    padding: 15px 0;
 }
 
 .logo{
-    height: 25px;
-    margin: 15px 0;
+    height: 25px;   
 }
 
 header .container{
@@ -203,9 +203,30 @@ main a{
 footer{
     margin-top: 50px;
     background-color: var(--color-footer);
+    color: white;
+    padding: 30px;
+    font-size: 12px;
 }
 
 footer .container{
     justify-content: space-between;
 }
 
+.fter-about{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fter-right{
+    text-align: center;
+}
+
+.fter-social{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fter-social-icon{
+    font-size: 25px;
+}
