@@ -35,6 +35,10 @@ li{
     padding-right: 10px;
 }
 
+img{
+    display: block;
+}
+
 /* debug */
 .debug .db-border{
     border: 2px dashed black;
@@ -52,14 +56,6 @@ header .container > *{
 
 .flex{
     display: flex;
-}
-
-.card-tag.hidden{
-    /* this selector is used to hide discount and sust tags while they are still present in html;
-    they need to be phisically present because sustainable tag's position depends on discount's */
-    /* it needs a more advanced selector to win specificity */
-    padding: 0;
-    font-size: 0;
 }
 
 /* header */
@@ -122,22 +118,27 @@ main a{
     max-width: 100%;
 }
 
+.card-picture{
+    position: relative;
+    margin-bottom: 2px;
+}
+
 /* card hover logic */
 
-.card-picture{
-    position: relative;    
-}
-
-.card-default-pic{
-    position: relative;
-}
-
 .card-hover-pic{
-    position: absolute;
+    display: none;
 }
 
-.card-picture:hover .card-default-pic{
-    z-index: -1;
+.column:hover .card-hover-pic{
+    display: block;
+}
+
+.column:hover .card-default-pic{
+    display: none;
+}
+
+.card-favourite:hover{
+    color: red;
 }
 
 /* card tags */
@@ -151,30 +152,25 @@ main a{
     right:0;
 }
 
-.card-favourite:hover{
-    color: red;
-}
-
 .card-tag{
-    padding: 5px 10px;
+    color: white;
     font-size: 14px;
     font-weight: bold;
     position: absolute;    
-}
-
-.card-tag.discount{
-    background-color: red;
-    color: white;
     bottom: 75px;
     left: 0;
 }
 
-.card-tag.sustainable{
+.card-tag > *{
+    padding: 5px 10px;
+}
+
+.card-tag .discount{
+    background-color: red;
+}
+
+.card-tag .sustainable{
     background-color: #008000;
-    color: white;
-    /* since sustainable's parent is discount, left 100% positions it on discount's right, 110% gives it a little bit of space  */
-    left: 110%;
-    bottom: 0;    
 }
 
 /* card bottom text styling */
