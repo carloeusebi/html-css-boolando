@@ -44,10 +44,6 @@ img{
     border: 2px dashed black;
 }
 
-header .container > *{
-    width: 20px;
-}
-
 /* utilities */
 .container{
     max-width: 1400px;
@@ -80,7 +76,7 @@ header .container{
 }
 
 header .container > *{
-    flex-grow: 1;
+    flex-basis: 33%;
     display: flex;
     align-items: center;
 }
